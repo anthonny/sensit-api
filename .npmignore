@@ -1,0 +1,11 @@
+node_modules
+coverage
+test
+lib
+.babelrc
+.editorconfig
+.eslintrc
+.gitattributes
+.gitignore
+.travis.yml
+gulpfile.js

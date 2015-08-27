@@ -1,0 +1,45 @@
+{
+  "name": "sensit-api",
+  "version": "1.0.0",
+  "description": "A Javascript API wrapper for thie Sens'it API",
+  "homepage": "",
+  "repository": "anthonny/sensit-api",
+  "author": {
+    "name": "Anthonny Querouil",
+    "email": "anthonny.querouil@gmail.com",
+    "url": "http://anthonnyquerouil.fr"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "keywords": [
+    "javascript",
+    "sensit",
+    "api",
+    "rest"
+  ],
+  "devDependencies": {
+    "babel-core": "^5.5.0",
+    "gulp": "^3.6.0",
+    "gulp-babel": "^5.1.0",
+    "gulp-coveralls": "^0.1.0",
+    "gulp-eslint": "^0.15.0",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-istanbul": "^0.9.0",
+    "gulp-mocha": "^2.0.0",
+    "gulp-nsp": "^0.4.5",
+    "gulp-plumber": "^1.0.0",
+    "isparta": "^3.0.3",
+    "lodash": "^3.10.1",
+    "q": "^1.4.1",
+    "request": "^2.61.0",
+    "sha1": "^1.1.1",
+    "superagent": "^1.3.0"
+  },
+  "scripts": {
+    "prepublish": "gulp prepublish",
+    "test": "gulp"
+  },
+  "license": "MIT"
+}
