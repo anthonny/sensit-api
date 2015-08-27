@@ -127,5 +127,5 @@ MIT © [Anthonny Querouil](http://anthonnyquerouil.fr) ([@anthonny_q](http://twi
 [travis-url]: https://travis-ci.org/anthonny/sensit-api
 [daviddm-image]: https://david-dm.org/anthonny/sensit-api.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/anthonny/sensit-api
-[coveralls-image]: https://coveralls.io/repos/anthonny/sensit-api/badge.svg
-[coveralls-url]: https://coveralls.io/r/anthonny/sensit-api
+[coveralls-image]: https://coveralls.io/repos/anthonny/sensit-api/badge.svg?branch=master&service=github
+[coveralls-url]: https://coveralls.io/github/anthonny/sensit-api?branch=master
