@@ -1,5 +1,5 @@
 # sensit-api [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
-> A Javascript API wrapper for thie Sens&#39;it API
+> A Javascript API wrapper for the Sens&#39;it API
 
 
 ## Install
@@ -14,11 +14,19 @@ $ npm install --save sensit-api
 ```js
 var Sensit = require('sensit-api');
 
+// If you do not want to use the token
+// You will can use credentials with the function  auth().getToken(credentials)
+var client = new Sensit();
+
+// You can also use the token :)
 var client = new Sensit({token: 'my-token'});
 ```
 
 ### Authentication
 
+#### getToken
+
+You can use your credentials to get your access token:
 ```js
 var credentials = {
   email: 'my@email.com',
@@ -32,6 +40,9 @@ client.auth()
   });
 ```
 
+#### setToken
+
+And you can set the token and the client will it for your next requests:
 ```js
 var credentials = {
   email: 'my@email.com',
@@ -52,6 +63,7 @@ client.auth()
 
 ### Devices
 
+#### get
 ```js
 client.devices().get()
   .then(function (result) {
@@ -61,17 +73,22 @@ client.devices().get()
 
 ### Device
 
+#### get
 ```js
-var deviceId = '1234'
+var deviceId = '1234';
 
 client.device(deviceId).get()
   .then(function (result) {
     console.log(result);
   });
+```
 
+#### updateConfiguration
+```js
+var deviceId = '1234';
 var aConfiguration = {
   ...
-}
+};
 
 client.device(deviceId)
   .updateConfiguration(aConfiguration)
@@ -82,9 +99,10 @@ client.device(deviceId)
 
 ### Sensor
 
+#### get
 ```js
 var deviceId = '1234';
-var sensorId = '5678'
+var sensorId = '5678';
 
 client.sensor(deviceId, sensorId).get()
   .then(function (result) {
@@ -100,7 +118,7 @@ client.device(deviceId).sensor(sensorId).get()
 
 ## License
 
-MIT © [Anthonny Querouil](http://anthonnyquerouil.fr)
+MIT © [Anthonny Querouil](http://anthonnyquerouil.fr) ([@anthonny_q](http://twitter.com/anthonny_q))
 
 
 [npm-image]: https://badge.fury.io/js/sensit-api.svg
